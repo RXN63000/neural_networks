@@ -1,0 +1,28 @@
+1. What patterns do you observe in the training and validation accuracy curves?
+
+To see the training and validation accuracy curves, you need to run the provided code first and then launch TensorBoard. After that, you can observe the "Accuracy" graph under the "Scalars" section in TensorBoard.
+
+Patterns:
+
+Generally, both training and validation accuracy should increase as the training progresses.
+Ideally, you want to see both curves closely following each other, indicating that the model is generalizing well to unseen data.
+If the training accuracy is much higher than the validation accuracy, it suggests that the model is overfitting to the training data. This means it's memorizing the training examples instead of learning the underlying patterns.
+If both training and validation accuracy are low and plateau early, it could indicate underfitting, where the model is too simple to capture the complexity of the data.
+
+
+2. How can you use TensorBoard to detect overfitting?
+
+TensorBoard provides various ways to detect overfitting:
+
+Accuracy Curves: As mentioned earlier, a significant gap between training and validation accuracy is a clear sign of overfitting.
+Loss Curves: Similar to accuracy, a large difference between training and validation loss also indicates overfitting. The validation loss might start increasing while the training loss continues to decrease.
+Histograms and Distributions: These visualizations can help you identify if the model's weights are becoming too large or concentrated in specific areas, which can also be a sign of overfitting.
+
+
+3. What happens when you increase the number of epochs?
+
+Increasing the number of epochs means training the model for more iterations over the dataset. Here's what might happen:
+
+Improved Accuracy: Initially, increasing epochs can lead to better accuracy on both training and validation sets as the model has more opportunities to learn the patterns in the data.
+Overfitting: If you train for too many epochs, the model might start overfitting. This is because it has had too much exposure to the training data and starts memorizing it instead of generalizing.
+Plateauing Accuracy: At some point, increasing epochs might not lead to further improvements in accuracy. This is when the model has likely reached its learning capacity for the given data and architecture.
