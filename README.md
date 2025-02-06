@@ -1,42 +1,45 @@
-# neural_networks
- 
-# Tensor Manipulation and Reshaping with TensorFlow
+# TensorFlow Exercises
 
-   This Colab notebook demonstrates basic tensor manipulation and reshaping operations using TensorFlow.
+This repository contains a set of exercises demonstrating basic TensorFlow functionalities, including tensor manipulations, loss functions, hyperparameter tuning, and model training with different optimizers.
 
-   ## Task 1: Tensor Manipulations & Reshaping
+## Exercises
 
-   The notebook covers the following operations:
+### Task 1: Tensor Manipulations & Reshaping
 
-   1. Creating a random tensor of shape (4, 6).
-   2. Finding the rank and shape of the tensor.
-   3. Reshaping the tensor into (2, 3, 4) and transposing it to (3, 2, 4).
-   4. Broadcasting a smaller tensor (1, 4) to match the larger tensor and adding them.
+-   Creating random tensors
+-   Finding tensor rank and shape
+-   Reshaping and transposing tensors
+-   Broadcasting tensors
 
-   ## Usage
+### Task 2: Loss Functions & Hyperparameter Tuning
 
-   To run this notebook, simply open it in Google Colab and execute the cells sequentially. Ensure that you have TensorFlow installed in your environment.
+-   Calculating Mean Squared Error (MSE) and Categorical Cross-Entropy (CCE) losses
+-   Visualizing loss function comparisons
 
-	# Loss Functions and Hyperparameter Tuning
+### Task 3: Train a Model with Different Optimizers
 
-This code demonstrates the calculation and comparison of different loss functions commonly used in machine learning, particularly for hyperparameter tuning.
+-   Training an MNIST model with Adam and SGD optimizers
+-   Comparing training and validation accuracy trends
 
-## Functionality
+### Task 4: Visualizing with TensorBoard
 
-The code performs the following steps:
+-   Enabling TensorBoard logging during model training
+-   Launching TensorBoard to analyze loss and accuracy trends
 
-1. **Defines true values (`y_true`) and model predictions (`y_pred`):** These are represented as TensorFlow constants.
-2. **Computes loss values:**
-   - **Mean Squared Error (MSE):** Using `tf.keras.losses.MeanSquaredError()`.
-   - **Categorical Cross-Entropy (CCE):** Using `tf.keras.losses.CategoricalCrossentropy()`. Note: CCE may require one-hot encoding for `y_true`.
-3. **Prints loss values:** Displays the calculated MSE and CCE losses.
-4. **Modifies predictions and recalculates losses:** Slightly adjusts the predictions and recomputes the losses to illustrate the impact of prediction changes.
-5. **Creates a bar chart:** Visualizes the comparison between MSE and CCE losses using Matplotlib.
+## Requirements
+
+-   TensorFlow
+-   Matplotlib
+-   Scikit-learn
 
 ## Usage
 
-1. **Prerequisites:** Ensure you have TensorFlow and Matplotlib installed. You can install them using:
-	
-   ## Author
+1.  Install the required libraries using `pip`:
+-   "bash pip install tensorflow matplotlib scikit-learn"
 
-   Ravi Teja Reddy Nomula (700756300)
+2.  Run the Python script containing the exercises.
+
+## Author
+
+Ravi Teja Reddy Nomula
+700756300
