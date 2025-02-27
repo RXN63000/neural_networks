@@ -1,14 +1,23 @@
-1.1 Elasticity and Scalability
+##1.1 Elasticity and Scalability
+
+
 Elasticity: Elasticity refers to the ability of a cloud system to dynamically allocate or deallocate resources (compute, storage, or networking) based on demand. In deep learning, elasticity allows seamless scaling up or down of resources during training and inference, ensuring cost efficiency.
 
 Scalability: Scalability refers to the system's ability to handle increasing workloads by adding resources (either vertically or horizontally). In deep learning, scalability allows the handling of large datasets and complex models, and it is essential for efficient training and inference.
 
-1.2 Comparison of AWS SageMaker, Google Vertex AI, and Microsoft Azure Machine Learning Studio
+##1.2 Comparison of AWS SageMaker, Google Vertex AI, and Microsoft Azure Machine Learning Studio
+
+
 AWS SageMaker: Highly customizable, integrates well with AWS, and is ideal for users already using AWS.
 Google Vertex AI: Provides excellent AutoML features, access to Google's pre-trained models and TPUs, ideal for users within the Google Cloud ecosystem.
 Microsoft Azure ML Studio: Known for strong MLOps capabilities, seamlessly integrates with Azure services, making it ideal for enterprises using Microsoft’s cloud.
-2. Convolution Operations with Different Parameters
-2.1 Convolution with Different Strides and Padding
+
+
+##2. Convolution Operations with Different Parameters
+
+
+#2.1 Convolution with Different Strides and Padding
+
 The Python script below performs convolution on a 5x5 input matrix using a 3x3 kernel with varying stride and padding parameters:
 
 Stride = 1, Padding = 'VALID': Output dims shrink as no padding is used.
@@ -49,8 +58,13 @@ perform_convolution(stride=1, padding='valid')
 perform_convolution(stride=1, padding='same')
 perform_convolution(stride=2, padding='valid')
 perform_convolution(stride=2, padding='same')
-3. CNN Feature Extraction with Filters and Pooling
-3.1 Edge Detection Using Sobel Filter
+
+
+##3. CNN Feature Extraction with Filters and Pooling
+
+
+#3.1 Edge Detection Using Sobel Filter
+
 This script applies the Sobel filter for edge detection in both the x and y directions. It visualizes the results using Matplotlib:
 
 
@@ -106,7 +120,10 @@ plt.axis('off')
 
 plt.tight_layout()
 plt.show()
-3.2 Max Pooling and Average Pooling
+
+
+#3.2 Max Pooling and Average Pooling
+
 This script demonstrates Max Pooling and Average Pooling on a random 4x4 matrix using TensorFlow/Keras.
 
 
@@ -129,8 +146,13 @@ avg_pooled_matrix = avg_pool(input_matrix).numpy().squeeze()
 print("Original Matrix:\n", input_matrix.squeeze())
 print("\nMax-Pooled Matrix:\n", max_pooled_matrix)
 print("\nAverage-Pooled Matrix:\n", avg_pooled_matrix)
-4. Implementing and Comparing CNN Architectures
-4.1 Simplified AlexNet Architecture
+
+
+##4. Implementing and Comparing CNN Architectures
+
+
+#4.1 Simplified AlexNet Architecture
+
 This script defines a simplified version of AlexNet using TensorFlow/Keras. It includes several convolutional layers, max pooling, and fully connected layers.
 
 
@@ -159,7 +181,10 @@ model = Sequential([
 ])
 
 model.summary()
-4.2 Residual Block and ResNet Architecture
+
+
+#4.2 Residual Block and ResNet Architecture
+
 This script defines a residual block and uses it to create a simple ResNet-like model.
 
 
