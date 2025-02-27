@@ -1,4 +1,4 @@
-##1.1 Elasticity and Scalability
+## 1.1 Elasticity and Scalability
 
 
 Elasticity: Elasticity refers to the ability of a cloud system to dynamically allocate or deallocate resources (compute, storage, or networking) based on demand. In deep learning, elasticity allows seamless scaling up or down of resources during training and inference, ensuring cost efficiency.
