@@ -118,6 +118,8 @@ Yes, models **should be restricted** from certain datasets.
 - `data_poisoning_sentiment.py`
 - Images: `.png` outputs
 - README: This file
+- Quesion3.py
+- Question4.py
 
 ---
 
